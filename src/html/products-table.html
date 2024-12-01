@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="." />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style-tables.css">
+    <title>Detalle de Productos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <div class="input-wrapper">
+              <input type="text" id="product-search" class="search-input" placeholder="Buscar productos...">
+              <i class="fas fa-search search-icon"></i>
+            </div>
+          </div>
+          
+        <div id="products-table-view" class="products-table">
+            <table class="table">
+              <thead class="table-header">
+                <tr>
+                  <th class="header-cell">Producto</th>
+                  <th class="header-cell">Categoría</th>
+                  <th class="header-cell">Precio</th>
+                  <th class="header-cell">Stock</th>
+                  <th class="header-cell">Estado</th>
+                  <th class="header-cell">Acciones</th>
+                </tr>
+              </thead>
+              <tbody class="table-body">
+                <!-- Producto 1 -->
+                <tr class="table-row">
+                  <td class="table-cell">
+                    <div class="product-info">
+                      <div class="icon-container">
+                        <i class="fas fa-laptop icon"></i>
+                      </div>
+                      <div class="product-details">
+                        <div class="product-name">Laptop Pro X1</div>
+                        <div class="product-sku">SKU: LPX1-2023</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table-cell">Computadoras</td>
+                  <td class="table-cell price">$1,299.99</td>
+                  <td class="table-cell">125 unidades</td>
+                  <td class="table-cell">
+                    <span class="status-badge in-stock">En Stock</span>
+                  </td>
+                  <td class="table-cell">
+                    <div class="actions">
+                      <button class="action-btn edit-btn">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-btn delete-btn">
+                        <i class="fas fa-trash"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <!-- Producto 2 -->
+                <tr class="table-row">
+                  <td class="table-cell">
+                    <div class="product-info">
+                      <div class="icon-container">
+                        <i class="fas fa-keyboard icon"></i>
+                      </div>
+                      <div class="product-details">
+                        <div class="product-name">Teclado Mecánico RGB</div>
+                        <div class="product-sku">SKU: TEC-2023</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table-cell">Accesorios</td>
+                  <td class="table-cell price">$129.99</td>
+                  <td class="table-cell">45 unidades</td>
+                  <td class="table-cell">
+                    <span class="status-badge in-stock">En Stock</span>
+                  </td>
+                  <td class="table-cell">
+                    <div class="actions">
+                      <button class="action-btn edit-btn">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-btn delete-btn">
+                        <i class="fas fa-trash"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <!-- Producto 3 -->
+                <tr class="table-row">
+                  <td class="table-cell">
+                    <div class="product-info">
+                      <div class="icon-container">
+                        <i class="fas fa-mouse icon"></i>
+                      </div>
+                      <div class="product-details">
+                        <div class="product-name">Mouse Gamer Pro</div>
+                        <div class="product-sku">SKU: MOU-GP-2023</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table-cell">Accesorios</td>
+                  <td class="table-cell price">$49.99</td>
+                  <td class="table-cell">200 unidades</td>
+                  <td class="table-cell">
+                    <span class="status-badge in-stock">En Stock</span>
+                  </td>
+                  <td class="table-cell">
+                    <div class="actions">
+                      <button class="action-btn edit-btn">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-btn delete-btn">
+                        <i class="fas fa-trash"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <!-- Producto 4 -->
+                <tr class="table-row">
+                  <td class="table-cell">
+                    <div class="product-info">
+                      <div class="icon-container">
+                        <i class="fas fa-tv icon"></i>
+                      </div>
+                      <div class="product-details">
+                        <div class="product-name">Monitor 4K Ultra HD</div>
+                        <div class="product-sku">SKU: MON-4K2023</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table-cell">Pantallas</td>
+                  <td class="table-cell price">$399.99</td>
+                  <td class="table-cell">75 unidades</td>
+                  <td class="table-cell">
+                    <span class="status-badge in-stock">En Stock</span>
+                  </td>
+                  <td class="table-cell">
+                    <div class="actions">
+                      <button class="action-btn edit-btn">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-btn delete-btn">
+                        <i class="fas fa-trash"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <!-- Producto 5 -->
+                <tr class="table-row">
+                  <td class="table-cell">
+                    <div class="product-info">
+                      <div class="icon-container">
+                        <i class="fas fa-headphones icon"></i>
+                      </div>
+                      <div class="product-details">
+                        <div class="product-name">Audífonos Inalámbricos</div>
+                        <div class="product-sku">SKU: AUD-WR-2023</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table-cell">Audio</td>
+                  <td class="table-cell price">$89.99</td>
+                  <td class="table-cell">180 unidades</td>
+                  <td class="table-cell">
+                    <span class="status-badge in-stock">En Stock</span>
+                  </td>
+                  <td class="table-cell">
+                    <div class="actions">
+                      <button class="action-btn edit-btn">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-btn delete-btn">
+                        <i class="fas fa-trash"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <!-- Producto 6 -->
+                <tr class="table-row">
+                  <td class="table-cell">
+                    <div class="product-info">
+                      <div class="icon-container">
+                        <i class="fas fa-tablet icon"></i>
+                      </div>
+                      <div class="product-details">
+                        <div class="product-name">Tablet X10</div>
+                        <div class="product-sku">SKU: TAB-X10-2023</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table-cell">Dispositivos Móviles</td>
+                  <td class="table-cell price">$299.99</td>
+                  <td class="table-cell">120 unidades</td>
+                  <td class="table-cell">
+                    <span class="status-badge low-stock">Pocas Unidades</span>
+                  </td>
+                  <td class="table-cell">
+                    <div class="actions">
+                      <button class="action-btn edit-btn">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-btn delete-btn">
+                        <i class="fas fa-trash"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <!-- Producto 7 -->
+                <tr class="table-row">
+                  <td class="table-cell">
+                    <div class="product-info">
+                      <div class="icon-container">
+                        <i class="fas fa-desktop icon"></i>
+                      </div>
+                      <div class="product-details">
+                        <div class="product-name">PC Gaming Ultra</div>
+                        <div class="product-sku">SKU: PCG-U2023</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table-cell">Computadoras</td>
+                  <td class="table-cell price">$1,599.99</td>
+                  <td class="table-cell">60 unidades</td>
+                  <td class="table-cell">
+                    <span class="status-badge in-stock">En Stock</span>
+                  </td>
+                  <td class="table-cell">
+                    <div class="actions">
+                      <button class="action-btn edit-btn">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-btn delete-btn">
+                        <i class="fas fa-trash"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <!-- Producto 8 -->
+                <tr class="table-row">
+                  <td class="table-cell">
+                    <div class="product-info">
+                      <div class="icon-container">
+                        <i class="fas fa-camera icon"></i>
+                      </div>
+                      <div class="product-details">
+                        <div class="product-name">Cámara Reflex HD</div>
+                        <div class="product-sku">SKU: CAM-HD2023</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table-cell">Fotografía</td>
+                  <td class="table-cell price">$749.99</td>
+                  <td class="table-cell">30 unidades</td>
+                  <td class="table-cell">
+                    <span class="status-badge low-stock">Pocas Unidades</span>
+                  </td>
+                  <td class="table-cell">
+                    <div class="actions">
+                      <button class="action-btn edit-btn">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-btn delete-btn">
+                        <i class="fas fa-trash"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <!-- Producto 9 -->
+                <tr class="table-row">
+                  <td class="table-cell">
+                    <div class="product-info">
+                      <div class="icon-container">
+                        <i class="fas fa-watch icon"></i>
+                      </div>
+                      <div class="product-details">
+                        <div class="product-name">Smartwatch Z</div>
+                        <div class="product-sku">SKU: SW-Z2023</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table-cell">Wearables</td>
+                  <td class="table-cell price">$199.99</td>
+                  <td class="table-cell">80 unidades</td>
+                  <td class="table-cell">
+                    <span class="status-badge in-stock">En Stock</span>
+                  </td>
+                  <td class="table-cell">
+                    <div class="actions">
+                      <button class="action-btn edit-btn">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-btn delete-btn">
+                        <i class="fas fa-trash"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <!-- Producto 10 -->
+                <tr class="table-row">
+                  <td class="table-cell">
+                    <div class="product-info">
+                      <div class="icon-container">
+                        <i class="fas fa-battery-full icon"></i>
+                      </div>
+                      <div class="product-details">
+                        <div class="product-name">Batería Externa 20,000mAh</div>
+                        <div class="product-sku">SKU: BAT-20K2023</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table-cell">Accesorios</td>
+                  <td class="table-cell price">$39.99</td>
+                  <td class="table-cell">300 unidades</td>
+                  <td class="table-cell">
+                    <span class="status-badge in-stock">En Stock</span>
+                  </td>
+                  <td class="table-cell">
+                    <div class="actions">
+                      <button class="action-btn edit-btn">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-btn delete-btn">
+                        <i class="fas fa-trash"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+    </div>
+    
+</body>
+</html>
