@@ -166,7 +166,7 @@ body {
 
 
 /************************************************ DESCPACHOS ************************************************************/
-/* Botón de nuevo despacho */
+
 .new-shipment-button {
     background-color: #4f46e5; /* Indigo 600 */
     color: white;
@@ -178,7 +178,7 @@ body {
   }
   
   .new-shipment-button:hover {
-    background-color: #3730a3; /* Indigo 700 */
+    background-color: #3730a3; 
   }
   
   /* Tabla */
@@ -187,7 +187,7 @@ body {
     margin-top: 1rem;
   }
   
-  .shipments-table {
+  #shipments-table {
     width: 100%;
     border-collapse: collapse;
   }
@@ -219,7 +219,7 @@ body {
   }
   
   .actions button:hover {
-    color: #2563eb; /* Blue 600 */
+    color: #2563eb; 
   }
   
   .status-badge {
@@ -242,30 +242,26 @@ body {
 
 /* Hover effects */
 .actions button:hover {
-    color: #FFF; /* Blanco cuando el cursor pasa sobre el botón */
-    transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+    color: #6b7280; 
+    transform: scale(1.1);
 }
 
-/* Estilos específicos para cada icono */
 .actions button i {
-    margin: 0; /* Asegura que no haya margen alrededor del icono */
+    margin: 0; 
 }
 
-/* Icono de ubicación */
 .actions button i.fas.fa-map-marker-alt {
-    color: #00BFFF; /* Azul brillante */
+    color: #00BFFF; 
 }
 
-/* Icono de check */
 .actions button i.fas.fa-check {
-    color: #32CD32; /* Verde brillante */
+    color: #32CD32; 
 }
 
-/* Hover effects para cada icono */
 .actions button:hover i.fas.fa-map-marker-alt {
-    color: #1E90FF; /* Azul más oscuro al pasar el ratón */
+    color: #1E90FF; 
 }
 
 .actions button:hover i.fas.fa-check {
-    color: #228B22; /* Verde más oscuro al pasar el ratón */
+    color: #228B22; 
 }
