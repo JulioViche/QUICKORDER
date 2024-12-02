@@ -1,0 +1,165 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: #111; /* Texto más oscuro */
+  background-color: #F9FAFB; /* Fondo claro */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #CCC; /* Borde gris claro */
+  border-radius: 5px;
+  background-color: #FFF; /* Fondo blanco */
+  color: #111; /* Texto negro */
+  font-size: 16px;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: #888; /* Placeholder gris medio */
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  color: #666; /* Ícono gris oscuro */
+}
+
+.products-table {
+  width: 100%;
+  max-width: 1200px;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #FFF; /* Fondo blanco */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.table-header {
+  background-color: #E5E7EB; /* Fondo gris claro */
+}
+
+.header-cell {
+  color: #374151; /* Texto gris oscuro */
+  font-weight: bold;
+  padding: 15px;
+  text-align: left;
+  border-bottom: 2px solid #D1D5DB; /* Línea divisoria gris */
+}
+
+.table-body {
+  background-color: #FFF; /* Fondo blanco */
+}
+
+.table-row {
+  transition: background-color 0.3s;
+}
+
+.table-row:hover {
+  background-color: #F3F4F6; /* Fondo gris claro al pasar */
+}
+
+.table-cell {
+  color: #374151; /* Texto gris oscuro */
+  padding: 10px 15px;
+  border-bottom: 1px solid #E5E7EB; /* Línea divisoria gris */
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+}
+
+.icon-container {
+  margin-right: 10px;
+}
+
+.icon {
+  font-size: 24px;
+  color: #6B7280; /* Ícono gris medio */
+}
+
+.product-name {
+  font-weight: bold;
+  color: #111; /* Texto negro */
+}
+
+.product-sku {
+  font-size: 14px;
+  color: #6B7280; /* Texto gris medio */
+}
+
+.price {
+  color: #16A34A; /* Verde para precios */
+  font-weight: bold;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+  text-align: center;
+  color: #FFF; /* Texto blanco */
+}
+
+.in-stock {
+  background-color: #22C55E; /* Verde para en stock */
+}
+
+.low-stock {
+  background-color: #FACC15; /* Amarillo para bajo stock */
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  color: #6B7280; /* Ícono gris medio */
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.action-btn:hover {
+  color: #111; /* Ícono negro */
+}
+
+.edit-btn {
+  color: #3B82F6; /* Azul para editar */
+}
+
+.delete-btn {
+  color: #EF4444; /* Rojo para eliminar */
+}
