@@ -3,9 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style-tables-dark.css">
     <title>Ordenes</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="orders-header">
+            <h2 class="orders-title">Gestión de Órdenes</h2>
+            <button class="btn btn-primary">
+                <i class="fas fa-plus"></i> Nueva Orden
+            </button>
+        </div>
+        
+        <div class="orders-table-view">
+            <table class="table">
+                <thead class="table-header">
+                    <tr>
+                        <th class="header-cell">ID Orden</th>
+                        <th class="header-cell">Cliente</th>
+                        <th class="header-cell">Fecha</th>
+                        <th class="header-cell">Productos</th>
+                        <th class="header-cell">Total</th>
+                        <th class="header-cell">Estado</th>
+                        <th class="header-cell">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                    <tr class="table-row">
+                        <td class="table-cell">#ORD-2023-001</td>
+                        <td class="table-cell">
+                            <div class="customer-info">
+                                <div class="customer-details">
+                                    <div class="customer-name">Juan Pérez</div>
+                                    <div class="customer-email">juan@email.com</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="table-cell">2023-05-15</td>
+                        <td class="table-cell">3 items</td>
+                        <td class="table-cell price">$1,234.56</td>
+                        <td class="table-cell">
+                            <span class="status-badge completed">Completada</span>
+                        </td>
+                        <td class="table-cell">
+                            <div class="actions">
+                                <button class="action-btn view-btn">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="action-btn print-btn">
+                                    <i class="fas fa-print"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Additional rows would follow the same structure -->
+                </tbody>
+            </table>
+        </div>    
+    </div>
 </body>
 </html>
