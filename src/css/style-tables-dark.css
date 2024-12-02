@@ -286,6 +286,7 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     color: #333;
+    margin-right: 42rem;
 }
 
 /* Buttons */
@@ -344,7 +345,7 @@ body {
     background-color: #f9fafb;
 }
 
-.table-cell .price {
+.table-cell  {
     padding: 1rem 1.5rem;
     border-bottom: 1px solid #e5e7eb;
     color: white;
