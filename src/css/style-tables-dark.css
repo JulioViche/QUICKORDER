@@ -344,9 +344,10 @@ body {
     background-color: #f9fafb;
 }
 
-.table-cell {
+.table-cell .price {
     padding: 1rem 1.5rem;
     border-bottom: 1px solid #e5e7eb;
+    color: white;
 }
 
 /* Customer Info */
