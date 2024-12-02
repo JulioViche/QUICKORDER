@@ -51,7 +51,7 @@ body {
     color: #FFF5;
 }
 
-.inputs_container {
+.inputs-container {
     display: flex;
     flex-flow: column;
 }

@@ -104,7 +104,7 @@ footer p {
     text-align: center;
 }
 
-.main_container {
+.main-container {
     display: flex;
     flex-flow: row;
 
@@ -112,6 +112,6 @@ footer p {
     padding: 0 100px;
 }
 
-.sections_container {
+.sections-container {
     flex: 4;
 }
