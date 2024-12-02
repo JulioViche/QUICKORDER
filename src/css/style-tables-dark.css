@@ -163,3 +163,70 @@ body {
 .delete-btn {
     color: #DC3545;
 }
+
+
+/************************************************ DESCPACHOS ************************************************************/
+/* Botón de nuevo despacho */
+.new-shipment-button {
+    background-color: #4f46e5; /* Indigo 600 */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .new-shipment-button:hover {
+    background-color: #3730a3; /* Indigo 700 */
+  }
+  
+  /* Tabla */
+  .table-container {
+    overflow-x: auto;
+    margin-top: 1rem;
+  }
+  
+  .shipments-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .shipments-table th,
+  .shipments-table td {
+    text-align: left;
+    padding: 0.75rem;
+  }
+  
+  .shipments-table th {
+    background-color: #f9fafb; /* Gray 50 */
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #6b7280; /* Gray 500 */
+  }
+  
+  .shipments-table tr:hover {
+    background-color: #f3f4f6; /* Gray 100 */
+  }
+  
+  .actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+  
+  .actions button:hover {
+    color: #2563eb; /* Blue 600 */
+  }
+  
+  .status-badge {
+    background-color: #fef3c7; /* Yellow 100 */
+    color: #b45309; /* Yellow 800 */
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+  }
+  
