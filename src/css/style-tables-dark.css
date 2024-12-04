@@ -358,24 +358,21 @@ body {
 }
 
 .customer-details {
-    margin-left: 1rem;
+    margin-left: 1rem;   
 }
 
-.customer-name {
+.customer-name{
     font-weight: 500;
-    color: #111827;
+    color: #0F0;
 }
+
 
 .customer-email {
     font-size: 0.875rem;
-    color: #6b7280;
+    color: gold;
+    font-style: italic;
 }
 
-/* Price */
-.price {
-    font-weight: 500;
-    color: #111827;
-}
 
 /* Status Badge */
 .status-badge {
