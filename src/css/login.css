@@ -68,6 +68,10 @@ body {
     margin-bottom: 20px;
 }
 
+.login label input[type="checkbox"] {
+    margin: 5px;
+}
+
 .login h1 {
     font-size: 20px;
     text-align: center;
