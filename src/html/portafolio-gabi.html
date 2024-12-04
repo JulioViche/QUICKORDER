@@ -19,46 +19,61 @@
 
     <main class="projects">
         <div class="project-card">
-            <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=1470&q=80" alt="E-commerce Platform" class="project-image">
-            <h2 class="project-title">E-commerce Platform</h2>
-            <p>A fully responsive e-commerce platform with user authentication, product management, and payment integration.</p>
-            <div class="tech-stack">
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">Node.js</span>
-                <span class="tech-tag">MongoDB</span>
-                <span class="tech-tag">Stripe</span>
-            </div>
-            <div class="links">
-                <a href="#" class="btn">View Code</a>
-                <a href="#" class="btn">Live Demo</a>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&w=1469&q=80" alt="Task Management App" class="project-image">
-            <h2 class="project-title">Task Management App</h2>
-            <p>A collaborative task management application with real-time updates and team collaboration features.</p>
-            <div class="tech-stack">
-                <span class="tech-tag">Vue.js</span>
-                <span class="tech-tag">Firebase</span>
-                <span class="tech-tag">Vuex</span>
-                <span class="tech-tag">Socket.io</span>
-            </div>
-            <div class="links">
-                <a href="#" class="btn">View Code</a>
-                <a href="#" class="btn">Live Demo</a>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=1471&q=80" alt="Weather Dashboard" class="project-image">
-            <h2 class="project-title">Weather Dashboard</h2>
-            <p>An interactive weather dashboard with location-based forecasts, historical data, and weather alerts.</p>
+            <img src="../img/pg1.webp" alt="Juego de la Vida" class="project-image">
+            <h2 class="project-title">Juego de la Vida</h2>
+            <p>El Juego de la Vida es un autómata celular creado por el matemático John Conway. Simula la evolución de células en una cuadrícula basándose en reglas simples, generando patrones complejos con el tiempo.</p>
+            <span>
+               <h3>Reglas del Juego</h3> 
+                Una célula viva con 2 o 3 vecinos vivos sobrevive a la siguiente generación.
+                Una célula muerta con exactamente 3 vecinos vivos se convierte en una célula viva.
+                En cualquier otro caso, las células vivas mueren y las células muertas permanecen muertas.
+                <h3>Características Principales</h3>
+                <strong>Estado Inicial: <em></em></strong>Los usuarios pueden configurar un patrón inicial en la cuadrícula, colocando células vivas en posiciones específicas.
+                <strong><em>Evolución Automática:</em></strong>  El programa calcula nuevas generaciones basándose en las reglas mencionadas.
+                <strong><em>Visualización Dinámica: </em></strong>Se muestra el avance de las generaciones en tiempo real, evidenciando la aparición de patrones como osciladores, naves espaciales o estructuras estables.
+                <strong><em>Interactividad: </em></strong> Algunas versiones del programa permiten pausar, reiniciar o cambiar la configuración durante la ejecución.
+            </span>
             <div class="tech-stack">
                 <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">Weather API</span>
-                <span class="tech-tag">Chart.js</span>
-                <span class="tech-tag">Bootstrap</span>
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS</span>
+            </div>
+            <div class="links">
+                <a href="#" class="btn">Ver Código</a>
+                <a href="#" class="btn">Demo en Vivo</a>
+            </div>
+        </div>
+        
+
+        <div class="project-card">
+            <img src="../img/pg2.png" alt="Task Management App" class="project-image">
+            <h2 class="project-title"> Conexión de Sockets con Hilos para Procesamiento Concurrente en JAVA</h2>
+            <p>El sistema utiliza las clases ServerSocket y Socket para establecer y gestionar conexiones entre el servidor y los clientes. Mediante hilos creados con la clase Thread o la interfaz Runnable, cada cliente tiene su propio canal de comunicación, utilizando InputStream y OutputStream para intercambiar datos de manera privada. Esto permite al servidor mantener una comunicación exclusiva con cada cliente, ideal para escenarios donde las interacciones necesitan ser individuales.
+
+                Además, el servidor puede habilitar la comunicación con todos los clientes conectados, retransmitiendo mensajes de manera simultánea. Esto se logra enviando el mismo mensaje a los flujos de salida de cada cliente gestionado, permitiendo implementar aplicaciones como chats grupales o sistemas de transmisión en tiempo real sin perder la flexibilidad de las conexiones independientes.</p>
+            <div class="tech-stack">
+                <span class="tech-tag">JAVA</span>
+                <span class="tech-tag">Netbeans</span>
+                <span class="tech-tag">Threads</span>
+                <span class="tech-tag">SocketServer</span>
+            </div>
+            <div class="links">
+                <a href="#" class="btn">View Code</a>
+                <a href="#" class="btn">Live Demo</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="../img/pg3.png" alt="Weather Dashboard" class="project-image">
+            <h2 class="project-title">Vivid Vista</h2>
+            <p> es una aplicación que emula las funcionalidades clásicas de Microsoft Paint, ofreciendo herramientas de dibujo básicas y opciones de edición gráfica en una interfaz amigable y simplificada. Permite a los usuarios crear y editar imágenes con herramientas esenciales como lápiz, pincel, borrador, líneas, formas geométricas (rectángulos, círculos, polígonos, etc.), y relleno de color. Además, incluye una paleta de colores personalizable y la posibilidad de seleccionar grosores de pincel para adaptarse a distintos estilos de dibujo.
+
+                La aplicación soporta funciones como copiar, cortar y pegar elementos dentro del lienzo, además de herramientas para insertar texto en las imágenes. Los usuarios pueden cargar imágenes desde su dispositivo, editarlas y guardarlas en formatos comunes como PNG, JPEG, o BMP. También incorpora opciones para deshacer y rehacer cambios, facilitando la edición sin temor a cometer errores. Vivid Vista está diseñado para ser ligero y eficiente, ideal para tareas gráficas simples y para aquellos que buscan una alternativa rápida y funcional a Paint.</p>
+            <div class="tech-stack">
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">.Net</span>
+                <span class="tech-tag">Visual Studio</span>
+                <span class="tech-tag">Graphic Computing</span>
             </div>
             <div class="links">
                 <a href="#" class="btn">View Code</a>
