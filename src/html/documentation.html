@@ -9,14 +9,23 @@
 </head>
 <body>
     <nav>
-        <a href="index.html">Inicio</a> |
+        <ul class="navbar">
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <label class="toggle">
+                    Tema oscuro
+                    <input id="theme-toggle" type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </li>
+        </ul>
     </nav>
     <header>
         <h1>QuickOrder</h1>
     </header>
     <div class="main-container">
         <aside>
-            <h2>Contenidos  </h2>
+            <h2>Contenido</h2>
             <ul>
                 <li><a href="#introduction">Introducción</a></li>
                 <li><a href="#usage">Uso</a></li>

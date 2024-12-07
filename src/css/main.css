@@ -15,15 +15,29 @@ nav {
     border-bottom: solid 1px #FFF3;
 }
 
-nav a {
-    color: #FFFC;
-    text-decoration: none;
+.navbar {
+    display: flex;
+    list-style: none;
+    align-items: stretch;
 }
 
-nav a:hover {
-    color: #FFFE;
+.navbar li {
+    padding: 0 10px;
+}
+
+.navbar li:has(#theme-toggle) {
+    margin-left: auto;
+}
+
+.navbar a {
+    color: #FFFC;
+    text-decoration: none;
 
     transition: .25s;
+}
+
+.navbar a:hover {
+    color: #FFFE;
 }
 
 header {
@@ -129,4 +143,103 @@ footer p {
 
 .sections-container {
     flex: 4;
+}
+
+/* DARK MODE --------------------------------------------------------------------------------- */
+
+.toggle {
+    display: flex;
+    justify-content: center;
+}
+  
+.toggle input {
+    display: none;
+}
+
+.toggle .slider {
+    position: relative;
+    cursor: pointer;
+
+    background-color: #CCC;
+
+    width: 40px;
+    height: 20px;
+    margin: 0 10px;
+    border-radius: 10px;
+
+    transition: 0.25s;
+}
+
+.toggle input:checked + .slider {
+    background-color: #4caf50;
+}
+
+.toggle input:checked + .slider::before {
+    transform: translateX(20px);
+}
+  
+.toggle .slider::before {
+    content: '';
+
+    position: absolute;
+    top: 1px;
+    left: 1px;
+
+    width: 18px;
+    height: 18px;
+    background-color: #ffffff;
+    border-radius: 50%;
+
+    transition: .25s;
+}
+
+body:has(#theme-toggle:checked) {
+    background-image: linear-gradient(90deg, #BBB 10%, #CCC 50%, #BBB 90%);
+
+    nav {
+        color: #112C;
+        border-color: #1123;
+    }
+
+    nav a {
+        color: #112C;
+    }
+
+    nav a:hover {
+        color: #112E;
+    }
+
+    header h1 {
+        color: #112;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: #112C;
+    }
+
+    p {
+        color: #112A;
+    }
+
+    span {
+        color: #112A;
+    }
+
+    input[type="text"], input[type="password"], textarea {
+        color: #112A;
+        background-color: #3347;
+    }
+
+    input::placeholder {
+        color: #777;
+    }
+
+    aside a {
+        color: #112A;
+    }
+
+    aside a:hover {
+        color: #112C;
+        border-bottom-color: #112C;
+    }
 }

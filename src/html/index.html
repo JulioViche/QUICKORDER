@@ -10,8 +10,17 @@
 </head>
 <body>
     <nav>
-        <a href="documentation.html">Documentación</a> |
-        <a href="dev-profile.html">Desarrolladores</a>
+        <ul class="navbar">
+            <li><a href="documentation.html">Documentación</a></li>
+            <li><a href="dev-profile.html">Desarrolladores</a></li>
+            <li>
+                <label class="toggle">
+                    Tema oscuro
+                    <input id="theme-toggle" type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </li>
+        </ul>
     </nav>
     <header class="banner">
         <h1>QuickOrder</h1>
@@ -23,7 +32,6 @@
             <section class="cards-section">
             </section>
         </div>
-        <input type="text" placeholder="Usuario">
     </div>
 </body>
 </html>
