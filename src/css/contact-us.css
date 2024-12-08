@@ -1,5 +1,5 @@
 header {
-    background-image: linear-gradient(90deg, #001C, #0007, #001C), url("../img/contact-us-header.png");
+    background-image: linear-gradient(90deg, #001C, #0007, #001C), url(../img/contact-us-header.png);
     background-position: center bottom;
 }
 
@@ -14,7 +14,7 @@ header {
     flex: 0.25 0.8 600px;
     
     background-color: #0004;
-    padding: 20px 0 20px;
+    padding: 20px 20px 20px;
     border: solid 2px #FFF2;
     border-radius: 10px;
 }
@@ -24,7 +24,7 @@ header {
 
     color: #FFFA;
     font-weight: 600;
-    margin: 5px 10px;
+    margin: 15px 15px 0;
 }
 
 .contact-form input[type="text"], .contact-form textarea {
@@ -37,7 +37,7 @@ header {
 }
 
 .contact-form button {
-    color: #FFFA;
+    color: #FFFC;
     font-weight: 600;
     font-size: 16px;
     text-decoration: none;
@@ -55,4 +55,21 @@ header {
     color: #336;
 
     background-color: #FFFC;
+}
+
+/* DARK MODE --------------------------------------------------------------------------------- */
+
+body:has(#theme-toggle:checked) {
+    header {
+        background-image: linear-gradient(90deg, #CCF3, #FFF5, #CCF3), url(../img/contact-us-header.png);
+    }
+
+    .contact-form {  
+        background-color: #FFF;
+        border: solid 2px #1121;
+    }
+    
+    .contact-form label {
+        color: #112A;
+    }
 }

@@ -1,7 +1,7 @@
 .main-container {
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     margin: 30px 0;
 }
 
@@ -16,11 +16,11 @@
 }
 
 .dev-profile {
-    flex: 0.05 0 240px;
+    flex: 0.15 0 250px;
 }
 
 .contact-details {
-    flex: 0.4 0 240px;
+    flex: 0.45 0 240px;
 
     padding: 20px 0 20px;
 }
@@ -44,7 +44,7 @@
 
 .avatar-container img:hover {
     transform: scale(1.05);
-    box-shadow: 0px 0px 10px #777;
+    box-shadow: 0px 0px 20px #000;
 }
 
 .avatar-container h1 {
@@ -121,7 +121,7 @@
 }
 
 .portfolio-link {
-    color: #FFFA;
+    color: #FFFC;
     font-weight: 600;
     text-decoration: none;
 
@@ -130,13 +130,47 @@
     background: #335;
     border-radius: 20px;
     padding: 10px 20px;
-    margin: 20px auto 0;
+    margin: 20px auto 10px;
 
     transition: 0.25s;
 }
 
 .portfolio-link:hover {
-    color: #336;
+    color: #335;
 
     background-color: #FFFC;
+}
+
+/* DARK MODE --------------------------------------------------------------------------------- */
+
+body:has(#theme-toggle:checked) {  
+    .profile-container {
+        background-color: #FFF;
+        border: solid 2px #1121;
+    }
+    
+    .avatar-container {
+        border-bottom: 2px solid #1122;
+    }
+
+    .avatar-container img:hover {
+        box-shadow: 0px 0px 20px #77A;
+    }
+    
+    .social-media {
+        border-bottom: solid 1px #1121;
+    }
+    
+    .social-media:hover span {
+        color: #112;
+    }
+    
+    .social-media i {
+        color: #112C;
+    }
+    
+    .profile-info {
+        background: #FFF7;
+        border: solid 1px #1122;
+    }
 }
