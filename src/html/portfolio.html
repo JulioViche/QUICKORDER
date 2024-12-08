@@ -65,36 +65,78 @@
                 </div>
             </div>
         </section>
+
+
         <section id="GabrielMurillo" class="dev-portfolio">
             <div class="portfolio-head">
                 <img src="https://avatars.githubusercontent.com/u/51417217?v=4" alt="github-profile-img">
                 <h2>Gabriel Murillo</h2>
             </div>
+
             <div class="portfolio-body">
                 <div class="card">
-                    <div class="card-head">
-                        <h3 class="card-title">Proyecto 1</h3>
+                    <div id="p1-juego-vida" class="card-head">
+                        <h3 class="card-title">Juego de la Vida</h3>
                     </div>
                     <div class="card-body">
-                        <p class="card-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, eius iste. Consequuntur, sapiente sequi enim tempor</p>
+                        <p class="card-description">El Juego de la Vida es un autómata celular creado por el matemático John Conway. Simula la evolución de células en una cuadrícula basándose en reglas simples, generando patrones complejos con el tiempo.</p>
+                        
+                        <p class="card-description">
+                            <strong><em>Reglas del Juego:</em></strong><br>
+                            • Una célula viva con 2 o 3 vecinos vivos sobrevive a la siguiente generación.<br>
+                            • Una célula muerta con exactamente 3 vecinos vivos se convierte en una célula viva.<br>
+                            • En cualquier otro caso, las células vivas mueren y las células muertas permanecen muertas.
+                        </p>
+                
+                        <p class="card-description">
+                            <strong><em>Características Principales</em>:</strong><br>
+                            • Estado Inicial: Los usuarios pueden configurar un patrón inicial en la cuadrícula.<br>
+                            • Evolución Automática: El programa calcula nuevas generaciones basándose en las reglas.<br>
+                            • Visualización Dinámica: Se muestra el avance de las generaciones en tiempo real.<br>
+                            • Interactividad: Permite pausar, reiniciar o cambiar la configuración durante la ejecución.
+                        </p>
+                        
+                        <div class="pro-lang-container">
+                            <span class="pro-lang">JavaScript</span>
+                            <span class="pro-lang">Html5</span>
+                            <span class="pro-lang">CSS</span>
+                        </div>
                         <a class="card-link" href="#">Más</a>
                     </div>
                 </div>
+
                 <div class="card">
-                    <div class="card-head">
-                        <h3 class="card-title">Proyecto 1</h3>
+                    <div id="p2-server-sockets" class="card-head">
+                        <h3 class="card-title">Conexión de Sockets con Hilos para Procesamiento Concurrente en JAVA</h3>
                     </div>
                     <div class="card-body">
-                        <p class="card-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, eius iste. Consequuntur, sapiente sequi enim tempor</p>
+                        <p class="card-description">El sistema utiliza las clases ServerSocket y Socket para establecer y gestionar conexiones entre el servidor y los clientes. Mediante hilos creados con la clase Thread o la interfaz Runnable, cada cliente tiene su propio canal de comunicación, utilizando InputStream y OutputStream para intercambiar datos de manera privada. Esto permite al servidor mantener una comunicación exclusiva con cada cliente, ideal para escenarios donde las interacciones necesitan ser individuales.</p>
+                        
+                        <p class="card-description">Además, el servidor puede habilitar la comunicación con todos los clientes conectados, retransmitiendo mensajes de manera simultánea. Esto se logra enviando el mismo mensaje a los flujos de salida de cada cliente gestionado, permitiendo implementar aplicaciones como chats grupales o sistemas de transmisión en tiempo real sin perder la flexibilidad de las conexiones independientes.</p>   
+                        
+                        <div class="pro-lang-container">
+                            <span class="pro-lang">JAVA</span>
+                            <span class="pro-lang">Netbeans</span>
+                            <span class="pro-lang">Threads</span>
+                        </div>
                         <a class="card-link" href="#">Más</a>
                     </div>
                 </div>
+               
                 <div class="card">
-                    <div class="card-head">
-                        <h3 class="card-title">Proyecto 1</h3>
+                    <div id="p3-vivid-vista" class="card-head">
+                        <h3 class="card-title">Vivid Vista</h3>
                     </div>
                     <div class="card-body">
-                        <p class="card-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, eius iste. Consequuntur, sapiente sequi enim tempor</p>
+                        <p class="card-description">Es una aplicación que emula las funcionalidades clásicas de Microsoft Paint, ofreciendo herramientas de dibujo básicas y opciones de edición gráfica en una interfaz amigable y simplificada. Permite a los usuarios crear y editar imágenes con herramientas esenciales como lápiz, pincel, borrador, líneas, formas geométricas (rectángulos, círculos, polígonos, etc.), y relleno de color. Además, incluye una paleta de colores personalizable y la posibilidad de seleccionar grosores de pincel para adaptarse a distintos estilos de dibujo.
+
+                            La aplicación soporta funciones como copiar, cortar y pegar elementos dentro del lienzo, además de herramientas para insertar texto en las imágenes. Los usuarios pueden cargar imágenes desde su dispositivo, editarlas y guardarlas en formatos comunes como PNG, JPEG, o BMP. También incorpora opciones para deshacer y rehacer cambios, facilitando la edición sin temor a cometer errores. Vivid Vista está diseñado para ser ligero y eficiente, ideal para tareas gráficas simples y para aquellos que buscan una alternativa rápida y funcional a Paint.
+                        </p>
+                        <div class="pro-lang-container">
+                            <span class="pro-lang">C#</span>
+                            <span class="pro-lang">.Net</span>
+                            <span class="pro-lang">Visual Studio</span>
+                        </div>
                         <a class="card-link" href="#">Más</a>
                     </div>
                 </div>
