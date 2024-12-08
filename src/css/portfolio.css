@@ -1,3 +1,7 @@
+header {
+    background-image: linear-gradient(90deg, #001C, #0007, #001C), url(https://www.baltana.com/files/wallpapers-10/Black%20Square%20Abstract%20Background%20Wallpaper.jpg);
+}
+
 .portfolio-head {
     background: linear-gradient(90deg, #FFF1, #0000);
     display: flex;
@@ -31,6 +35,8 @@
 
     max-width: 350px;
     background-color: #111;
+    border: solid 2px #FFF3;
+    border-radius: 10px;
     box-shadow: 5px 5px 5px #000;
     
     margin: 10px;
@@ -38,14 +44,18 @@
 }
 
 .card:hover {
-    transform: scale(1.05);
+    box-shadow: 0 0 20px #77C;
+    transform: scale(1.025) translateY(-5px);
 }
 
 .card-head {
     align-content: center;
     text-align: center;
+
     height: 200px;
-    background-size: cover;
+    background-size: 105%;
+    background-position: center;
+    border-radius: 10px;
 }
 
 .card-title {
@@ -84,10 +94,31 @@
 
 .card-link:hover {
     color: #336;
-
+    
     background-color: #FFFC;
 }
 
-#sudoku {
-    background-image: url(https://wallpapercave.com/wp/wp8100958.jpg);
+.pro-lang {
+    display: inline-block;
+    min-width: 20px;
+
+    color: #77C;
+    text-align: center;
+
+    background-color: #77C3;
+    padding: 5px 10px;
+    border-radius: 13px;
+}
+
+#p1-sudoku {
+    background-image: linear-gradient(90deg, #000C, #0007, #000C), url(https://wallpapercave.com/wp/wp8100958.jpg);
+}
+
+#p2-sistema-medico {
+    background-image: linear-gradient(90deg, #000C, #0007, #000C), url(https://img.freepik.com/vector-gratis/concepto-medico-linea_23-2148546392.jpg);
+}
+
+#p3-control-financiero {
+    background-image: linear-gradient(90deg, #000C, #0007, #000C), url(https://img.freepik.com/fotos-premium/cuadros-graficos-economicos-financieros-ia-generativa_438099-17679.jpg);
+    background-size: 150%;
 }
