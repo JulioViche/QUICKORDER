@@ -1,8 +1,17 @@
+aside {
+    flex: 1.33;
+}
+
+aside input[type="text"] {
+    margin: 0;
+    width: 100%;
+}
+
 .cards-section {
     display: flex;
     flex-wrap: wrap;
 
-    padding: 20px 50px 100px;
+    padding: 20px 0 100px;
 }
 
 .card {

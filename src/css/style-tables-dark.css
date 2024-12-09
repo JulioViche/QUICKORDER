@@ -1,5 +1,4 @@
 body {
-    font-family: 'Raleway', sans-serif;
     font-size: 16px;
     color: #FFF;
     background-color: #1E1E1E;
@@ -8,6 +7,7 @@ body {
 }
 
 .container {
+    font-family: 'Raleway', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -285,7 +285,6 @@ body {
 .orders-title {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #333;
     margin-right: 42rem;
 }
 
@@ -419,3 +418,92 @@ body {
     color: #16a34a;
 }
 
+body:has(#theme-toggle:checked) {
+    color: #111; /* Texto más oscuro */
+    background-color: #F9FAFB; /* Fondo claro */
+    
+    .search-input {
+        border: 1px solid #CCC; /* Borde gris claro */
+        background-color: #FFF; /* Fondo blanco */
+        color: #111; /* Texto negro */
+    }
+    
+    .search-input::placeholder {
+        color: #888; /* Placeholder gris medio */
+    }
+    
+    .search-icon {
+        color: #666; /* Ícono gris oscuro */
+    }
+    
+    .table {
+        background-color: #FFF; /* Fondo blanco */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    }
+    
+    .table-header {
+        background-color: #E5E7EB; /* Fondo gris claro */
+    }
+    
+    .header-cell {
+        color: #374151; /* Texto gris oscuro */
+        border-bottom: 2px solid #D1D5DB; /* Línea divisoria gris */
+    }
+    
+    .table-body {
+        background-color: #FFF; /* Fondo blanco */
+    }
+    
+    .table-row:hover {
+        background-color: #F3F4F6; /* Fondo gris claro al pasar */
+    }
+    
+    .table-cell {
+        color: #374151; /* Texto gris oscuro */
+        border-bottom: 1px solid #E5E7EB; /* Línea divisoria gris */
+    }
+    
+    .icon {
+        color: #6B7280; /* Ícono gris medio */
+    }
+    
+    .product-name {
+        color: #111; /* Texto negro */
+    }
+    
+    .product-sku {
+        color: #6B7280; /* Texto gris medio */
+    }
+    
+    .price {
+        color: #16A34A; /* Verde para precios */
+    }
+    
+    .status-badge {
+        color: #FFF; /* Texto blanco */
+    }
+    
+    .in-stock {
+        background-color: #22C55E; /* Verde para en stock */
+    }
+    
+    .low-stock {
+        background-color: #FACC15; /* Amarillo para bajo stock */
+    }
+    
+    .action-btn {
+        color: #6B7280; /* Ícono gris medio */
+    }
+    
+    .action-btn:hover {
+        color: #111; /* Ícono negro */
+    }
+    
+    .edit-btn {
+        color: #3B82F6; /* Azul para editar */
+    }
+    
+    .delete-btn {
+        color: #EF4444; /* Rojo para eliminar */
+    }      
+}
