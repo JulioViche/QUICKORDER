@@ -153,6 +153,11 @@
     background-size: 150%;
 
 }
+#p3-chat-bot{
+    background-image: linear-gradient(90deg, #000C, #0007, #000C), url(https://aunoa.ai/wp-content/uploads/2024/05/tipos-de-chatbots.webp);
+    background-size: 150%;
+
+}
 
 /* DARK MODE --------------------------------------------------------------------------------- */
 
