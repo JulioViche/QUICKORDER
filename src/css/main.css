@@ -12,6 +12,12 @@ body {
 
 nav {
     color: #FFFC;
+    background: linear-gradient(90deg, #191922 10%, #292937 50%, #191922 90%);
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 
     border-bottom: solid 1px #FFF3;
 }
@@ -52,7 +58,9 @@ nav {
     background-color: #7777;
 }
 
+
 header {
+    background-image: linear-gradient(90deg, #001C, #0007, #001C), url(../img/header.png);
     align-content: center;
 
     text-align: center;
@@ -72,14 +80,34 @@ header h1 {
 
 h1, h2, h3, h4, h5, h6 {
     color: #FFFC;
-    font-size: 30px;
     margin: 20px 0;
+}
+
+.sections-container {
+    flex: 4;
+}
+
+.sections-container h2, aside h2 {
+    margin-top: 40px;
+}
+
+.sections-container h3 {
+    margin-top: 20px;
 }
 
 p {
     color: #FFFA;
     text-align: justify;
     margin: 10px 0 ;
+}
+
+section ol, section ul {
+    color: #FFFA;
+    padding-left: 15px;
+}
+
+section li {
+    padding-left: 10px;
 }
 
 span {
@@ -104,7 +132,6 @@ textarea {
     resize: vertical;
 }
 
-
 input::placeholder, textarea::placeholder {
     color: #777;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -112,8 +139,13 @@ input::placeholder, textarea::placeholder {
 }
 
 aside {
+    position: sticky;
+    top: 40px;
+    left: 0;
+
     flex: 1;
 
+    height: 100%;
     padding: 0 50px 0 30px;
 }
 
@@ -130,6 +162,11 @@ aside a:hover {
     border-bottom-color: #FFFC;
 
     transition: .25s;
+}
+
+aside ul {
+    padding-top: 20px;
+    padding-left: 0;
 }
 
 aside li {
@@ -154,89 +191,28 @@ footer p {
     padding: 0 100px;
 }
 
-.main-container {
-    display: flex;
-    flex-flow: row;
-    margin: auto;
-    padding: 0 50px;
-}
-
-.cards-section {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-}
-
-.card {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-    margin: 50px;
-}
-
-.card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-    background-color: #FFF;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card:hover img {
-    transform: scale(1.1);
-}
-
-.top-div {
-    position: absolute;
-    top: 200px;
-    left: 70px;
-    width: 200px;
-    height: 100px;
-    z-index: 10; 
-}
-
-.button {
-    background: rgb(204,46,15);
-    background: linear-gradient(90deg, rgba(204,46,15,1) 0%, rgba(227,52,8,1) 46%, rgba(255,244,0,1) 100%);
-    width: 150px;
-    height: 30px;
-    border: 2px;
-    border-radius: 20px;
-    cursor: pointer;
-}
 
 .footer {
-    border: 1px solid #777;
-    color: #fff; 
-    padding: 20px 0; 
-    text-align: center; 
+    color: #FFF;
+    border-top: 1px solid #FFF3;
+    text-align: center;
 }
 
-.footer-content {
-    display: flex;
-    justify-content: space-around; 
-    align-items: center; 
-    flex-wrap: wrap; 
-    margin-bottom: 10px; 
+.footer-links {
+    margin: 20px auto;
 }
 
 .footer-links a {
-    color: #fff; 
-    text-decoration: none; 
-    margin: 0 15px; 
-    transition: color 0.3s; 
+    color: #FFF7; 
+    text-decoration: none;
+    margin: 0 20px;
+
+    transition: 0.25s; 
 }
 
 .footer-links a:hover {
-    color: #fffc; 
+    color: #FFF; 
+    text-decoration: underline;
 }
 
 .footer-contact {
@@ -244,26 +220,30 @@ footer p {
 }
 
 .contact-button {
-    background-color: rgb(204,46,15); 
-    color: #fff; 
-    padding: 10px 20px; 
-    border: none; 
-    border-radius: 5px; 
+    display: inline-block;
+    color: #FFFC;
+    font-size: 15px;
     text-decoration: none;
-    font-size: 16px; 
-    transition: background-color 0;
-    transition: background-color 0.3s; 
+
+    background: #559;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: auto;
+    margin-bottom: 10px;
+
+    transition: 0.25s;
 }
 
 .contact-button:hover {
-    background-color: rgb(235, 111, 80); 
+    color: #336;
+    
+    background-color: #CCC;
 }
 
 .footer-bottom {
     margin-top: 10px; 
     font-size: 14px; 
 }
-
 
 
 /* DARK MODE --------------------------------------------------------------------------------- */
@@ -325,6 +305,7 @@ body:has(#theme-toggle:checked) {
 
     nav {
         color: #112C;
+        background-image: linear-gradient(90deg, #FFF 10%, #FFF 50%, #FFF 90%);
         border-color: #1123;
     }
 
@@ -334,6 +315,10 @@ body:has(#theme-toggle:checked) {
 
     nav a:hover {
         color: #112E;
+    }
+
+    header {
+        background-image: linear-gradient(90deg, #CCF3, #FFF5, #CCF3), url(../img/header.png);
     }
 
     header h1 {
@@ -346,6 +331,10 @@ body:has(#theme-toggle:checked) {
     }
 
     p {
+        color: #112A;
+    }
+
+    section ol, section ul {
         color: #112A;
     }
 
@@ -369,5 +358,18 @@ body:has(#theme-toggle:checked) {
     aside a:hover {
         color: #112C;
         border-bottom-color: #112C;
+    }
+
+    .footer {
+        color: #112;
+        border-top: 1px solid #1123;
+    }
+    
+    .footer-links a {
+        color: #1127; 
+    }
+    
+    .footer-links a:hover {
+        color: #112; 
     }
 }

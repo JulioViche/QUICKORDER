@@ -6,6 +6,7 @@
     <title>QuickOrder - Inicio</title>
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 </head>
@@ -14,8 +15,6 @@
         <ul class="navbar">
             <li><a class="current" href="index.html">Inicio</a></li>
             <li><a href="documentation.html">Documentación</a></li>
-            <li><a href="dev-profile.html">Desarrolladores</a></li>
-            <li><a href="portfolio.html">Portafolios</a></li>
             <li><a href="contact-us.html">Contáctanos</a></li>
             <li>
                 <label class="toggle">
@@ -31,94 +30,68 @@
     </header>
     <div class="main-container">
         <aside>
-            <h2>CATEGORIAS</h2>
-            
-            <div class="sections-container">
-                <section class="cards-section">
-                    
-                    <div class="card">
-                        <img src="/src/img/laptopProduct.avif" alt="laptopProduct">
-                        <div class="top-div">
-                            <h3>Laptop Pro X1</h3>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="/src/img/AUDIFONOS-GAMER.webp" alt="audifonosProduct">
-                        <div class="top-div">
-                            <h3>Audifonos Inalambricos</h3>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="/src/img/mouse_gamer_G-Pro_32062_6.jpg" alt="MouseProduct">
-                        <div class="top-div">
-                            <h3>Mouse Gamer Pro</h3>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="/src/img/pantallaProduct.avif" alt="MouseProduct">
-                        <div class="top-div">
-                            <h3>Monitor 4K Ultra HD</h3>
-                        </div>
-                    </div>
-                    
-                </section>
-                <h2>INFORMACION</h2>
-                <section class="cards-section">
-                    <div class="card">
-                        <a href="/src/html/products-table.html">
-                            <img src="/src/img/detallesProducto.png" alt="Imagen 1">
-                            <div class="top-div">
-                                <a href="/src/html/products-table.html">
-                                    <button class="button">Detalles de productos</button>
-                                </a>
-                            </div>
-                        </a>
-                        <img src="/img/detallesProducto.png" alt="Detalles Productos">
-                        <div class="top-div">
-                            <button class="button">Detalles de productos</button>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <a href="/src/html/ordenes.html">
-                            <img src="/src/img/gestionOrdenes.jpg" alt="Gestion de Ordenes">
-                            <div class="top-div">
-                                <a href="/src/html/ordenes.html" class="button-link">
-                                    <button class="button">Gestion de Ordenes</button>
-                                </a>                          
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="/src/html/despachos.html">
-                            <img src="/src/img/controldeDespachos.png" alt="">
-                            <div class="top-div">
-                                <a href="/src/html/despachos.html">
-                                    <button class="button">Control de Despachos</button>
-                                </a> 
-                            </div>
-                        </a>                   
-                    </div>
-                </section>
-            </div>
+            <h2>Preguntas frecuentes</h2>
         </aside>
+        <div class="sections-container">
+            <section>
+                <h2>Productos</h2>
+                <div class="cards-section">
+                    <a href="products-table.html" class="card">
+                        <div id="product1" class="card-head">
+                            <h3 class="card-title">Laptops</h3>
+                        </div>
+                    </a>
+                    <a href="products-table.html" class="card">
+                        <div id="product2" class="card-head">
+                            <h3 class="card-title">Audífonos</h3>
+                        </div>
+                    </a>
+                    <a href="products-table.html" class="card">
+                        <div id="product3" class="card-head">
+                            <h3 class="card-title">Ratones</h3>
+                        </div>
+                    </a>
+                    <a href="products-table.html" class="card">
+                        <div id="product4" class="card-head">
+                            <h3 class="card-title">Monitores</h3>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section>
+                <h2>Servicios</h2>
+                <div class="cards-section">
+                    <a href="products-table.html" class="card">
+                        <div id="products" class="card-head">
+                            <h3 class="card-title">Productos</h3>
+                        </div>
+                    </a>
+                    <a href="ordenes.html" class="card">
+                        <div id="orders" class="card-head">
+                            <h3 class="card-title">Órdenes</h3>
+                        </div>
+                    </a>
+                    <a href="despachos.html" class="card">
+                        <div id="dispatches" class="card-head">
+                            <h3 class="card-title">Despachos</h3>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
     </div>
-
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="documentation.html">Documentación</a>
-                <a href="dev-profile.html">Desarrolladores</a>
-            </div>
-            <div class="footer-contact">
-                <p>¿Tienes preguntas? ¡Contáctanos!</p>
-                <a href="/src/html/contact-us.html" class="contact-button">Contacto</a>
-            </div>
+        <div class="footer-links">
+            <a href="portfolio.html">Portafolios</a>
+            <a href="dev-profile.html">Desarrolladores</a>
+            <a href="documentation.html">Documentación</a>
+        </div>
+        <div class="footer-contact">
+            <p>¿Tienes preguntas? ¡Contáctanos!</p>
+            <a href="contact-us.html" class="contact-button">Contacto</a>
         </div>
         <div class="footer-bottom">
-            <center>
-                <p>&copy; 2024 QuickOrder. Todos los derechos reservados.</p>
-            </center>
+            <p>&copy; 2024 QuickOrder. Todos los derechos reservados.</p>
         </div>
     </footer>
 </body>

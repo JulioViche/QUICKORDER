@@ -13,8 +13,6 @@
         <ul class="navbar">
             <li><a href="index.html">Inicio</a></li>
             <li><a class="current" href="documentation.html">Documentación</a></li>
-            <li><a href="dev-profile.html">Desarrolladores</a></li>
-            <li><a href="portfolio.html">Portafolios</a></li>
             <li><a href="contact-us.html">Contáctanos</a></li>
             <li>
                 <label class="toggle">
@@ -32,19 +30,95 @@
         <aside>
             <h2>Contenido</h2>
             <ul>
-                <li><a href="#introduction">Introducción</a></li>
-                <li><a href="#usage">Uso</a></li>
+                <li><a href="#general-description">Descripción general</a></li>
+                <li><a href="#pages-structure">Estructura de la página</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#orders">Órdenes</a></li>
+                <li><a href="#dispatchs">Despachos</a></li>
             </ul>
         </aside>
         <div class="sections-container">
-            <h2 id="introduction">Registro y gestión de órdenes de compra</h2>
-            <p>La aplicación resultante de este proyecto está diseñada para registrar y gestionar órdenes de compra. Con la finalidad de facilitar, agilizar y evitar errores al momento del despacho de productos para su posterior entrega.</p>
-            <h2 id="usage">Uso</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci placeat, consectetur expedita iusto ab facere nam obcaecati quasi in fugiat iste molestias veritatis laboriosam. Ea perspiciatis consequatur magnam voluptatum alias.</p>
+        <section>
+            <h2 id="general-description">Descripción general</h2>
+            <p>La página web está diseñada para gestionar productos, despachos y órdenes. En la página de inicio se presentan tres enlaces principales que redirigen a cada una de estas secciones. Cada sección contiene tablas interactivas que permiten visualizar y gestionar la información relacionada.</p>
+            <p>En la barra de navegación también se encuentran opciones para conocer más acerca de los encargados en desarrollar la página así como para contactarnos.</p>
+        </section>
+        <section>
+            <h2 id="pages-structure">Estructura de la página</h2>
+            <p>La página principal está dividida en tres secciones funcionales y cuatro de información con enlaces que dirigen a las siguientes páginas:</p>
+            <ol>
+                <li>Documentación</li>
+                <li>Desarrolladores</li>
+                <li>Portafolios</li>
+                <li>Contáctanos</li>
+                <li>Productos</li>
+                <li>Órdenes</li>
+                <li>Despachos</li>
+            </ol>
+            <p>Cada uno de los enlaces lleva a su respectiva página, donde los usuarios pueden consultar la información, filtrarla y realizar acciones de gestió.</p>
+        </section>
+        <section>
+            <h2 id="products">Productos</h2>
+            <h3>Descripción</h3>
+            <p>En la página de productos, se muestra una tabla con la información de todos los productos disponibles en el sistema. Los usuarios pueden agregar, modificar y eliminar productos, así como consultar su estado y detalles.</p>
+            <h3>Funcionalidades principales</h3>
+            <p>Todos los productos disponibles se muestran en una tabla. La tabla contiene las siguientes columnas:</p>
+            <ul>
+                <li>Producto</li>
+                <li>Categoría</li>
+                <li>Precio</li>
+                <li>Stock</li>
+                <li>Estado</li>
+                <li>Acciones</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="orders">Órdenes</h2>
+            <h3>Descripción</h3>
+            <p>La página de órdenes muestra una lista de todas las órdenes realizadas por los clientes. Cada orden contiene información detallada sobre los productos comprados, la cantidad y el estado del pedido.</p>
+            <h3>Funcionalidades principales</h3>
+            <p>La tabla contiene la siguiente información:</p>
+            <ul>
+                <li>ID</li>
+                <li>Cliente</li>
+                <li>Fecha</li>
+                <li>Productos</li>
+                <li>Total</li>
+                <li>Estado</li>
+                <li>Acciones</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="dispatchs">Despachos</h2>
+            <h3>Descripción</h3>
+            <p>En la página de despachos, los usuarios pueden consultar los despachos realizados y programados. La tabla de despachos muestra los detalles de cada envío, incluyendo la información del producto, destino y estado.</p>
+            <h3>Funcionalidades principales</h3>
+            <p>La tabla muestra la siguiente información:</p>
+            <ul>
+                <li>ID</li>
+                <li>Orden</li>
+                <li>Destino</li>
+                <li>Fecha de envío</li>
+                <li>Courier</li>
+                <li>Estado</li>
+                <li>Acciones</li>
+            </ul>
+        </section>
         </div>
     </div>
-    <footer>
-        <p><em>Hecho por: Julio Viche</em></p>
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="portfolio.html">Portafolios</a>
+            <a href="dev-profile.html">Desarrolladores</a>
+            <a href="documentation.html">Documentación</a>
+        </div>
+        <div class="footer-contact">
+            <p>¿Tienes preguntas? ¡Contáctanos!</p>
+            <a href="contact-us.html" class="contact-button">Contacto</a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 QuickOrder. Todos los derechos reservados.</p>
+        </div>
     </footer>
 </body>
 </html>

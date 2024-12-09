@@ -1,8 +1,3 @@
-header {
-    background-image: linear-gradient(90deg, #001C, #0007, #001C), url(../img/contact-us-header.png);
-    background-position: center bottom;
-}
-
 .main-container {
     justify-content: center;
     padding: 50px 100px;
@@ -60,10 +55,6 @@ header {
 /* DARK MODE --------------------------------------------------------------------------------- */
 
 body:has(#theme-toggle:checked) {
-    header {
-        background-image: linear-gradient(90deg, #CCF3, #FFF5, #CCF3), url(../img/contact-us-header.png);
-    }
-
     .contact-form {  
         background-color: #FFF;
         border: solid 2px #1121;

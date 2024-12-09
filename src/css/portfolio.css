@@ -1,8 +1,3 @@
-header {
-    background-image: linear-gradient(90deg, #001C, #0007, #001C), url(../img/portfolio-header.png);
-    background-position: center bottom;
-}
-
 .portfolio-head {
     background: linear-gradient(90deg, #FFF1 10%, #0000);
     display: flex;
@@ -162,10 +157,6 @@ header {
 /* DARK MODE --------------------------------------------------------------------------------- */
 
 body:has(#theme-toggle:checked) {
-    header {
-        background-image: linear-gradient(90deg, #CCF3, #FFF5, #CCF3), url(../img/portfolio-header.png);
-    }
-
     .portfolio-head {
         background: linear-gradient(90deg, #F7F7F7, #F7F7F7);
         border-top: solid 2px#1123;

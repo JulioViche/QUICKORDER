@@ -19,6 +19,10 @@
     flex: 0.15 0 250px;
 }
 
+.dev-profile h1 {
+    margin: 20px 0;
+}
+
 .contact-details {
     flex: 0.45 0 240px;
 

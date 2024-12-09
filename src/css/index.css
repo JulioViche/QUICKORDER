@@ -1,0 +1,110 @@
+.cards-section {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 20px 50px 100px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 300px;
+    text-decoration: none;
+
+    max-width: 350px;
+    background-color: #111;
+    border: solid 2px #FFF3;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px #000;
+    
+    margin: 10px;
+    transition: 0.25s;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px #77C;
+    transform: scale(1.025) translateY(-5px);
+}
+
+.card-head {
+    align-content: center;
+    text-align: center;
+
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.card-title {
+    color: #FFF;
+    text-shadow: 0 0 5px #FFF7;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+    padding: 5px 20px;
+}
+
+.card-description {
+    display: inline-block;
+    color: #FFF9;
+    font-size: 15px;
+}
+
+#product1 {
+    background-image: linear-gradient(90deg, #000C, #0007, #000C), url(../img/laptopProduct.avif);
+    background-size: 120%;
+}
+
+#product2 {
+    background-image: linear-gradient(90deg, #000C, #0007, #000C), url(../img/AUDIFONOS-GAMER.webp);
+}
+
+#product3 {
+    background-image: linear-gradient(90deg, #000C, #0007, #000C), url(../img/mouse_gamer_G-Pro_32062_6.jpg);
+    background-size: 150%;
+}
+
+#product4 {
+    background-image: linear-gradient(90deg, #000C, #0007, #000C), url(../img/pantallaProduct.avif);
+}
+
+#orders {
+    background-image: linear-gradient(90deg, #000C, #0007, #000C), url(../img/orders.png);
+}
+
+#products {
+    background-image: linear-gradient(90deg, #000C, #0007, #000C), url(../img/products.png);
+}
+
+#dispatches {
+    background-image: linear-gradient(90deg, #000C, #0007, #000C), url(../img/dispatches.png);
+}
+
+/* DARK MODE --------------------------------------------------------------------------------- */
+
+body:has(#theme-toggle:checked) {
+    .card {
+        background-color: #FFF;
+        border: solid 2px #1123;
+        box-shadow: 0 5px 5px #0000;
+    }
+    
+    .card:hover {
+        box-shadow: 0 0 20px #77C;
+    }
+    
+    .card-title {
+        color: #FFF;
+        text-shadow: 0 0 5px #FFF7;
+    }
+    
+    .card-description {
+        color: #1129;
+    }
+}
