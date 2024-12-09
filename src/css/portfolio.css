@@ -148,6 +148,17 @@ header {
     background-size: 150%;
 }
 
+#p1-damas-chinas{
+    background-image: linear-gradient(90deg, #000C, #0007, #000C), url(https://s1.elespanol.com/2023/11/02/actualidad/806679907_237293809_1706x960.jpg  );
+    background-size: 150%;
+
+}
+#p2-cubo-rubik2D{
+    background-image: linear-gradient(90deg, #000C, #0007, #000C), url(https://kubekings.com/img/ybc_blog/post/thumb/portada-notacion.jpg );
+    background-size: 150%;
+
+}
+
 /* DARK MODE --------------------------------------------------------------------------------- */
 
 body:has(#theme-toggle:checked) {
